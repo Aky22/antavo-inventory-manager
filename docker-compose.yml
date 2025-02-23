@@ -1,0 +1,20 @@
+version: "3"
+services:
+  inventory-manager:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "3002:3000"
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
