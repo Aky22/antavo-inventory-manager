@@ -3,6 +3,19 @@
 
 This is a simple inventory manager system built with Nuxt.js and Tailwind CSS.
 
+## How to run the project
+### Development
+To run the project in development mode, you need to run the following commands:
+```bash
+ docker-compose -f docker-compose.dev.yml up
+```
+
+### Production
+To run the project in production mode, you need to run the following commands:
+```bash
+ docker-compose up
+```
+
 ## Design Choices
 
 ### State Management
