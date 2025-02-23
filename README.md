@@ -1,3 +1,4 @@
+![lint workflow](https://github.com/Aky22/antavo-inventory-manager/actions/workflows/lint.yml/badge.svg)
 # Inventory manager system
 
 This is a simple inventory manager system built with Nuxt.js and Tailwind CSS.
