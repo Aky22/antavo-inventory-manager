@@ -1,6 +1,6 @@
-ARG NODE_VERSION=20.18.0
+ARG NODE_VERSION=22.14.0
 
-FROM node:${NODE_VERSION}-slim as base
+FROM node:${NODE_VERSION}-alpine as base
 
 ARG PORT=3000
 
